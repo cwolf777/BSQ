@@ -6,24 +6,24 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 15:50:27 by cwolf             #+#    #+#             */
-/*   Updated: 2025/12/17 14:13:58 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/12/27 11:14:02 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bsq.h"
 
-void free_map(char **grid)
-{
-    if (grid)
-    {
-        for (int i = 0; grid[i] != NULL; i++)
-        {
-            if (grid[i])
-                free(grid[i]);
-        }
-    }
-    free(grid);
-}
+// void free_map(char **grid)
+// {
+//     if (grid)
+//     {
+//         for (int i = 0; grid[i] != NULL; i++)
+//         {
+//             if (grid[i])
+//                 free(grid[i]);
+//         }
+//     }
+//     free(grid);
+// }
 
 char *ft_strdup(char* buf, int len)
 {

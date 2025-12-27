@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 10:17:12 by cwolf             #+#    #+#             */
-/*   Updated: 2025/12/17 13:57:40 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/12/27 10:47:27 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ typedef struct s_found
     int y_pos;
     int best_size;
 } t_found;
-//found map oder so
 
 int execute(FILE* file);
 
