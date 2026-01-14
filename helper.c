@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 15:50:27 by cwolf             #+#    #+#             */
-/*   Updated: 2025/12/27 11:14:02 by cwolf            ###   ########.fr       */
+/*   Updated: 2026/01/14 18:48:27 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,14 +80,11 @@ int is_square(t_map *map, t_elements *elements, int pos_y, int pos_x, int size)
 
 void print_square(t_map* map, t_found *found, t_elements *elements)
 {
-    for (int i = 0; i < map->height; i++)
+    for (int i = 0; i < found->best_size; i++)
     {
-        for (int j = 0; j < map->width; j++)
+        for (int j = 0; j < found->best_size; j++)
         {
-            if(i >= found->y_pos && i < found->y_pos + found->best_size && j >= found->x_pos && j < found->x_pos + found->best_size)
-            {
-                map->grid[i][j] = elements->full;
-            }
+            map->grid[found->y_pos + i][found->x_pos + j] = elements->full;
         }
     }
     
